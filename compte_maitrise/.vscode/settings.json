@@ -1,0 +1,7 @@
+{
+    "python.pythonPath": "C:\\Users\\alexa\\go_bureau\\Bureau\\NEVEA\\python\\env_projet\\Scriptspython.exe",  // Chemin vers l'interpréteur Python de l'environnement virtuel
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.formatting.provider": "black",
+    "editor.formatOnSave": true
+}
