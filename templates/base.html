@@ -1,9 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Mon Projet{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}" />
 </head>
 <body>
     <header>
@@ -12,7 +14,9 @@
         </nav>
     </header>
     <main>
-        {% block content %}{% endblock %}
+        {% block content %}
+            <h1>Bienvenue dans l'application de Saisie Budget</h1>
+        {% endblock %}
     </main>
     <footer>
         <!-- Footer content here -->

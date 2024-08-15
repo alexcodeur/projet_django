@@ -1,0 +1,60 @@
+/* Fichier: PROJET/static/css/menu.css */
+
+/* Style de base pour le menu */
+.menu {
+    background-color: #f8f9fa; /* Teinte gris clair */
+    border: 1px solid #ddd; /* Bordure gris moyen */
+    padding: 10px;
+    width: auto; /* Modifier la largeur pour s'adapter au contenu */
+}
+
+/* Style des éléments du menu */
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Disposition des éléments en ligne */
+    flex-wrap: wrap; /* Permet de passer à la ligne si l'écran est petit */
+}
+
+.menu ul li {
+    margin-right: 5px; /* Espace entre les éléments horizontaux */
+    margin-bottom: 0; /* Annule la marge inférieure */
+}
+
+.menu ul li a {
+    display: block;
+    padding: 8px 12px;
+    color: #333; /* Texte gris foncé */
+    text-decoration: none;
+    background-color: #fff; /* Fond blanc */
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Effet au survol */
+.menu ul li a:hover {
+    background-color: #e9ecef; /* Teinte gris clair au survol */
+    color: #000; /* Texte noir au survol */
+}
+
+/* Sous-menu */
+.submenu {
+    margin-left: 0;
+    margin-top: 5px;
+    padding-left: 10px;
+    border-left: 0; /* Retire la bordure pour sous-menu */
+    display: none; /* Masque le sous-menu par défaut */
+    position: absolute; /* Position absolue pour le sous-menu */
+    background-color: #f8f9fa; /* Couleur de fond du sous-menu */
+    border: 1px solid #ddd; /* Bordure pour le sous-menu */
+}
+
+.menu ul li:hover .submenu {
+    display: block; /* Affiche le sous-menu au survol */
+    margin-top: 10px; /* Espacement entre le menu principal et le sous-menu */
+}
+
+.submenu li a {
+    background-color: #f1f1f1; /* Fond gris clair pour sous-menu */
+}

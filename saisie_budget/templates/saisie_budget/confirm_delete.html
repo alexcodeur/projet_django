@@ -1,0 +1,9 @@
+<!-- saisie_budget/templates/saisie_budget/confirm_delete.html -->
+<h2>Confirmer la Suppression</h2>
+<p>Êtes-vous sûr de vouloir supprimer l'entrée suivante ?</p>
+<p><strong>{{ entry.nom }}</strong> ({{ entry.email }}): {{ entry.message }}</p>
+<form method="post">
+    {% csrf_token %}
+    <button type="submit">Supprimer</button>
+    <a href="{% url 'saisie_budget_home' %}">Annuler</a>
+</form>
