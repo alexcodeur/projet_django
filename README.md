@@ -9,3 +9,7 @@ cd projet_django
 
 # démarrer le serveur
 python manage.py runserver
+
+# une fois terminé de travailler
+# fermer l'environnement
+deactivate
