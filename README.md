@@ -13,3 +13,6 @@ python manage.py runserver
 # une fois terminé de travailler
 # fermer l'environnement
 deactivate
+
+# mettre à jour le mot de passe de l'administrateur
+python manage.py changepassword alex
